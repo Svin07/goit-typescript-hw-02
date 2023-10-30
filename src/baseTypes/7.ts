@@ -4,15 +4,15 @@
 */
 
 enum Day {
-  Moonday = "workday",
-  Thursday = "workday",
-  Sunday = "holiday",
+  Moonday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }
 
 function isWeekend(day: Day): boolean {
-  if (Day.Moonday === "workday") {
-    return true;
-  } else {
-    return false;
-  }
+  return day <= 5 ? true : false;
 }
